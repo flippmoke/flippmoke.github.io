@@ -1,0 +1,18 @@
+<center>
+<img src="blobdance.gif">
+<div id='seconds-counter'> </div>
+<img src="blobdance.gif">
+</center>
+
+<script>
+var seconds = 0;
+var el = document.getElementById('seconds-counter');
+
+function incrementSeconds() {
+    seconds += 1;
+    el.innerHTML = "You have been here for " + seconds + " dances.";
+}
+
+var cancel = setInterval(incrementSeconds, 430);
+</script>
+
